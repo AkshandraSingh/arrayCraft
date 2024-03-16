@@ -13,4 +13,17 @@ module.exports = {
     //* Find the Max element value in array
     return Math.max(...array);
   },
+
+  isEmpty: (array: number[]): boolean => {
+    return array.length === 0;
+  },
+
+  removeDuplicates: <T>(array: T[]): T[] => {
+    return Array.from(new Set(array));
+  },
+
+  arrayDifference: <T>(array1: T[], array2: T[]): T[] => {
+    const set2 = new Set(array2);
+    return array1.filter((item) => !set2.has(item));
+  },
 };
