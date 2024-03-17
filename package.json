@@ -1,7 +1,7 @@
 {
   "name": "arraycraft",
   "version": "1.0.0",
-  "description": "",
+  "description": "arrayCraft is a versatile utility package designed to level up your array and string handling skills! 🛠️ With arrayCraft, you can effortlessly manipulate arrays and strings like a pro. Whether you're sorting, filtering, or transforming data, this package has got you covered. Say goodbye to tedious manual array operations and hello to streamlined efficiency! ",
   "main": "index.js",
   "scripts": {
     "test": ""
@@ -18,11 +18,18 @@
   "homepage": "https://github.com/AkshandraSingh/arrayCraft#readme",
   "devDependencies": {
     "@types/node": "^20.11.28",
-    "chai": "^5.1.0",
-    "mocha": "^10.3.0",
     "typescript": "^5.4.2"
   },
   "files": [
     "dist/**/*"
+  ],
+  "keywords": [
+    "array",
+    "string",
+    "utility",
+    "manipulation",
+    "sorting",
+    "filtering",
+    "transformation"
   ]
 }
