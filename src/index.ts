@@ -2,6 +2,6 @@ const arrayFunctions = require("./functions/arrayFunctions");
 const stringFunctions = require("./functions/stringFunctions");
 
 module.exports = {
-  arrayFunctions,
-  stringFunctions,
+  arrayFunctions: arrayFunctions,
+  stringFunctions: stringFunctions,
 };
