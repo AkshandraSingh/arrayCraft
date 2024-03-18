@@ -14,6 +14,8 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `minElement`: Find the minimum element in an array.
 - `maxElement`: Find the maximum element in an array.
 - `containsElement`: Check if an element is present in an array.
+- `removeFalsyValues`: Remove all the falsy values from an array.
+- `getRandomElement`: Return random element from an array.
 
 ## String Functions
 
@@ -22,6 +24,8 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `reverseString`: Reverse a string.
 - `isPalindrome`: Check if a string is a palindrome.
 - `generateRandomString`: Generate a random string of a specified length.
+- `toCamelCase`: Convert String into Camel case.
+- `removeWhitespace`: Remove All the white spaces in string.
 
 ## Installation
 
