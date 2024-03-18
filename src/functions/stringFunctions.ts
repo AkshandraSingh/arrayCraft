@@ -28,4 +28,19 @@ module.exports = {
     }
     return randomString;
   },
+  //* Convert Into Camel Case
+  toCamelCase: (str: string): string => {
+    const words: string[] = str.split("_");
+    const camelCaseString: string =
+      words[0] +
+      words
+        .slice(1)
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join("");
+    return camelCaseString;
+  },
+  //* Remove all White Space
+  removeWhitespace: (str: string): string => {
+    return str.replace(/\s/g, "");
+  },
 };
