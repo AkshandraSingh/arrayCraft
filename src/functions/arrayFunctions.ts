@@ -50,4 +50,16 @@ module.exports = {
   containsElement: <T>(array: T[], element: T): boolean => {
     return array.includes(element);
   },
+  //* Remove all Falsy Values in array
+  removeFalsyValues: <T>(array: T[]): T[] => {
+    return array.filter(Boolean);
+  },
+  //* Return random element from array
+  getRandomElement: <T>(array: T[]): T | undefined => {
+    if (array.length === 0) {
+      return undefined;
+    }
+    const randomIndex: number = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
+  },
 };
