@@ -26,6 +26,7 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `generateRandomString`: Generate a random string of a specified length.
 - `toCamelCase`: Convert String into Camel case.
 - `removeWhitespace`: Remove All the white spaces in string.
+- `removeHtmlTags`: Remove HTML tag in String.
 
 ## Installation
 

@@ -43,4 +43,8 @@ module.exports = {
   removeWhitespace: (str: string): string => {
     return str.replace(/\s/g, "");
   },
+  //* Remove HTML tag in String
+  removeHtmlTags: (str: string): string => {
+    return str.replace(/<[^>]*>/g, "");
+  },
 };
