@@ -1,6 +1,6 @@
 {
   "name": "arraycraft",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "arrayCraft is a versatile utility package designed to level up your array and string handling skills! 🛠️ With arrayCraft, you can effortlessly manipulate arrays and strings like a pro. Whether you're sorting, filtering, or transforming data, this package has got you covered. Say goodbye to tedious manual array operations and hello to streamlined efficiency! ",
   "main": "dist/index.js",
   "scripts": {

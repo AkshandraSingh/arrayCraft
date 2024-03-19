@@ -39,14 +39,14 @@ npm install arraycraft
 ## Usage
 
 ```javascript
-const arrayCraft = require("arraycraft");
+const { arrayFunctions, stringFunctions } = require("arraycraft");
 
 // Example usage of array functions
 const numbers = [1, 2, 3, 4, 5];
-console.log(arrayCraft.sumArray(numbers)); // Output: 15
+console.log(arrayFunctions.sumArray(numbers)); // Output: 15
 
 // Example usage of string functions
-console.log(arrayCraft.capitalizeFirstLetter("hello")); // Output: Hello
+console.log(stringFunctions.capitalizeFirstLetter("hello")); // Output: Hello
 ```
 
 ## Why ArrayCraft?
