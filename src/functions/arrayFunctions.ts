@@ -62,4 +62,10 @@ module.exports = {
     const randomIndex: number = Math.floor(Math.random() * array.length);
     return array[randomIndex];
   },
+  lastElement: <T>(array: T[]): T => {
+    return array[array.length - 1];
+  },
+  remove: <T>(array: T[], value: T): T[] => {
+    return array.filter((item) => item !== value);
+  },
 };

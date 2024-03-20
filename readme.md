@@ -16,6 +16,8 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `containsElement`: Check if an element is present in an array.
 - `removeFalsyValues`: Remove all the falsy values from an array.
 - `getRandomElement`: Return random element from an array.
+- `lastElement`: Return Last element in the string.
+- `remove`: Removes all occurrences of a specified value from an array.
 
 ## String Functions
 
@@ -27,6 +29,11 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `toCamelCase`: Convert String into Camel case.
 - `removeWhitespace`: Remove All the white spaces in string.
 - `removeHtmlTags`: Remove HTML tag in String.
+- `splitWords`: Make a array of words.
+- `shuffleString`: Shuffle the string.
+- `isValidEmailL`: Check is string is valid email.
+- `repeatString`: Repeat the string in multiple times.
+- `extractUrls`: Return a array of urls extract from string.
 
 ## Installation
 

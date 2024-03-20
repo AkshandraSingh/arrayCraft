@@ -47,9 +47,11 @@ module.exports = {
   removeHtmlTags: (str: string): string => {
     return str.replace(/<[^>]*>/g, "");
   },
+  //* Make a array of words
   splitWords: (str: string): string[] => {
     return str.split(" ");
   },
+  //* Shuffle the string
   shuffleString: (str: string): string => {
     const array = str.split("");
     for (let i = array.length - 1; i > 0; i--) {
@@ -58,12 +60,15 @@ module.exports = {
     }
     return array.join("");
   },
+  //* Check is string is valid email
   isValidEmailL: (str: string): boolean => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
   },
+  //* Repeat the string in multiple times
   repeatString: (str: string, count: number): string => {
     return str.repeat(count);
   },
+  //* Return a array of urls extract from string
   extractUrls: (str: string): string[] => {
     return str.match(/https?:\/\/\S+/g) || [];
   },
