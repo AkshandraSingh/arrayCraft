@@ -47,4 +47,24 @@ module.exports = {
   removeHtmlTags: (str: string): string => {
     return str.replace(/<[^>]*>/g, "");
   },
+  splitWords: (str: string): string[] => {
+    return str.split(" ");
+  },
+  shuffleString: (str: string): string => {
+    const array = str.split("");
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array.join("");
+  },
+  isValidEmailL: (str: string): boolean => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+  },
+  repeatString: (str: string, count: number): string => {
+    return str.repeat(count);
+  },
+  extractUrls: (str: string): string[] => {
+    return str.match(/https?:\/\/\S+/g) || [];
+  },
 };
