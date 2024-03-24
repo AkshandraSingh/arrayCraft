@@ -72,4 +72,17 @@ module.exports = {
   extractUrls: (str: string): string[] => {
     return str.match(/https?:\/\/\S+/g) || [];
   },
+  extractEmails: (str: string): string[] => {
+    const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+    return str.match(emailRegex) || [];
+  },
+  extractPhoneNumbers: (str: string): string[] => {
+    const phoneRegex =
+      /(?:\+\d{1,2}\s*)?(?:\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}/g;
+    return str.match(phoneRegex) || [];
+  },
+  extractDates: (str: string): string[] => {
+    const dateRegex = /\b\d{1,2}\/\d{1,2}\/\d{4}\b/g;
+    return str.match(dateRegex) || [];
+  },
 };
