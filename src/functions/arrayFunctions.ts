@@ -62,10 +62,43 @@ module.exports = {
     const randomIndex: number = Math.floor(Math.random() * array.length);
     return array[randomIndex];
   },
+  //* Return the last element in array
   lastElement: <T>(array: T[]): T => {
     return array[array.length - 1];
   },
+  //* Remove Removes all occurrences of a specified value from an array
   remove: <T>(array: T[], value: T): T[] => {
     return array.filter((item) => item !== value);
+  },
+  mean: (array: number[]): number => {
+    const sum = array.reduce((acc, val) => acc + val, 0);
+    return sum / array.length;
+  },
+  median: (array: number[]): number => {
+    const sortedArr = array.slice().sort((a, b) => a - b);
+    const mid = Math.floor(sortedArr.length / 2);
+    if (sortedArr.length % 2 === 0) {
+      return (sortedArr[mid - 1] + sortedArr[mid]) / 2;
+    } else {
+      return sortedArr[mid];
+    }
+  },
+  mode: (array: number[]): number[] => {
+    const counts = new Map<number, number>();
+    array.forEach((num) => counts.set(num, (counts.get(num) || 0) + 1));
+
+    let maxCount = 0;
+    let modes: number[] = [];
+
+    counts.forEach((count, num) => {
+      if (count > maxCount) {
+        maxCount = count;
+        modes = [num];
+      } else if (count === maxCount) {
+        modes.push(num);
+      }
+    });
+
+    return modes;
   },
 };
