@@ -18,6 +18,9 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `getRandomElement`: Return random element from an array.
 - `lastElement`: Return Last element in the string.
 - `remove`: Removes all occurrences of a specified value from an array.
+- `mean`: Return the Mean.
+- `median`: Return Median.
+- `mode`: Return Mode.
 
 ## String Functions
 
@@ -34,6 +37,9 @@ ArrayCraft is a powerful utility package designed to supercharge your array and 
 - `isValidEmailL`: Check is string is valid email.
 - `repeatString`: Repeat the string in multiple times.
 - `extractUrls`: Return a array of urls extract from string.
+- `extractEmails`: Extract the Emails from the string.
+- `extractPhoneNumbers`: Extract the Phone Numbers from the string.
+- `extractDates`: Extract the Dates from the string.
 
 ## Installation
 

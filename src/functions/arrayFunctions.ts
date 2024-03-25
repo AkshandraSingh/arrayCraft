@@ -70,10 +70,12 @@ module.exports = {
   remove: <T>(array: T[], value: T): T[] => {
     return array.filter((item) => item !== value);
   },
+  //* Return the Mean
   mean: (array: number[]): number => {
     const sum = array.reduce((acc, val) => acc + val, 0);
     return sum / array.length;
   },
+  //* Return Median
   median: (array: number[]): number => {
     const sortedArr = array.slice().sort((a, b) => a - b);
     const mid = Math.floor(sortedArr.length / 2);
@@ -83,6 +85,7 @@ module.exports = {
       return sortedArr[mid];
     }
   },
+  //* Return Mode
   mode: (array: number[]): number[] => {
     const counts = new Map<number, number>();
     array.forEach((num) => counts.set(num, (counts.get(num) || 0) + 1));
